@@ -1,0 +1,16 @@
+# project name (no space allowed)
+PROJECT=vue-example
+
+# base path for docker image name
+IMGBASE=localdev
+
+# port that will be used for development web server
+DEVPORT=8080
+
+# port that will be used for production web server
+PRODPORT=8081
+
+
+#################################################
+### DO NOT EDIT OR DELETE THE FOLLOWING LINES ###
+include builder/make/builder.mk
