@@ -29,12 +29,11 @@ export BUILD_DIR
 
 
 .PHONY: \
-	build-images \
 	info \
 	init \
 	shell \
-	start-services \
 	web \
+	remove-images
 
 #################
 # Initialization
@@ -53,6 +52,8 @@ DOCKER_IMAGES=$(addprefix $(IMGBASE)/$(PROJECT)-, \
 	shell \
 	web \
 )
+
+.PHONY: $(DOCKER_IMAGES)
 
 init: $(GENERATED) $(DOCKER_IMAGES) $(PROJECT_SRC)
 
