@@ -1,0 +1,10 @@
+shell:
+  image: "${BASENAME}/${PROJECT}-shell"
+  container_name: "${BASENAME}_${PROJECT}-shell"
+  hostname: "${PROJECT}-shell"
+  volumes:
+  - "${SRC_DIR}:/home/devuser/src"
+  ports:
+  - "${DEVPORT}:8080"
+  working_dir: "/home/devuser/src/${PROJECT}"
+  command: "/bin/bash"

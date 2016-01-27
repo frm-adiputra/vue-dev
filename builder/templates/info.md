@@ -6,13 +6,13 @@ User Provided Configuration
 PROJECT={{PROJECT}}
 
 # base path for docker image name
-IMGBASE={{IMGBASE}} 
+BASENAME={{BASENAME}}
 
 # port that will be used for development web server
 DEVPORT={{DEVPORT}}
 
 # port that will be used for production web server
-PRODPORT={{PRODPORT}}
+DISTPORT={{PRODPORT}}
 ```
 
 Builder Configuration
@@ -24,8 +24,3 @@ GID     = {{GID}}
 ROOTDIR = {{ROOT}}
 BUILDIR = {{BUILD_DIR}}
 ```
-
-Volumes
-=======
-
-- `{{PROJECT}}-mod`: for persisting `node_modules` directory.

@@ -1,0 +1,7 @@
+dist:
+  image: "${BASENAME}/${PROJECT}-dist"
+  container_name: "${BASENAME}_${PROJECT}-dist"
+  ports:
+  - "${DISTPORT}:8080"
+  volumes:
+  - "${SRC_DIR}:/home/devuser/src"
