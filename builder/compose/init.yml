@@ -1,0 +1,7 @@
+init:
+  image: "${BASENAME}/${PROJECT}-shell"
+  container_name: "${BASENAME}_${PROJECT}-init"
+  volumes:
+  - "${SRC_DIR}:/home/devuser/src"
+  working_dir: "/home/devuser/src"
+  command: "vue init webpack ${PROJECT}"

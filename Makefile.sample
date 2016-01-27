@@ -2,13 +2,13 @@
 PROJECT=vue-example
 
 # base path for docker image name
-IMGBASE=localdev
+BASENAME=localdev
 
 # port that will be used for development web server
-DEVPORT=8080
+DEVPORT=4578
 
 # port that will be used for production web server
-PRODPORT=8081
+DISTPORT=4579
 
 
 #################################################
